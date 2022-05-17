@@ -10,7 +10,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/Applovin-weathe">
+        <Route path="/Applovin-weather">
           <Route path="" element={<Home />} />
           <Route path="detail" element={<Detail />} />
         </Route>
