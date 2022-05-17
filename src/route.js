@@ -10,8 +10,10 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/detail" element={<Detail />} />
+        <Route path="/Applovin-weathe">
+          <Route path="" element={<Home />} />
+          <Route path="detail" element={<Detail />} />
+        </Route>
       </Routes>
     </Router>
   );
