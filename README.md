@@ -1,6 +1,6 @@
 ## Applovin-Weather
 
-> 项目通过 github pages 部署，地址 [请点击查看在线 web](https://hansenleee.github.io/Applovin-weather/#/Applovin-weather)
+> 项目通过 github pages 部署，地址 [请点击查看在线 web](https://hansenleee.github.io/Applovin-weather/#/Applovin-weather)，代码仓库在 - https://github.com/Hansenleee/Applovin-weather/tree/master
 
 该项目是一个简易的天气预报 web 项目，分为首页和详情页
 
