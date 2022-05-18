@@ -1,70 +1,28 @@
-# Getting Started with Create React App 11
+## Applovin-Weather
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> 项目通过 github pages 部署，地址 [请点击查看在线 web](https://hansenleee.github.io/Applovin-weather/#/Applovin-weather)
 
-## Available Scripts
+该项目是一个简易的天气预报 web 项目，分为首页和详情页
 
-In the project directory, you can run:
+## 项目介绍
 
-### `npm start`
+项目是通过 `create-react-app` 构建的（通过 `eject` 将 `webpack` 配置暴露出来了）
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+|——src
+|——————components              // 全局通用组件
+|——————constants               // 全局通用常量
+|——————pages                   // 页面
+|——————services                // 接口请求统一封装，实现各种缓存逻辑
+|——————utils                   // 工具库
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 离线缓存
+项目通过 `SW` 进行离线缓存，缓存相关的代码放在 `/public/register.js` `/public/sw.js` 中，接口的缓存通过 `storage` 来实现
 
-### `npm test`
+## 依赖
+- 项目中涉及到的图片依赖了 `alioss` （小文件通过 base64）  
+- 获取天气的接口依赖了高德 `API`  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 其他
+- 未来 24 h 的 API 暂时没有找到（找到的是需要付费的），因此是通过 `mock` 来实现的
