@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Applovin-weather/static/css/main.d05aaac4.css",
-    "main.js": "/Applovin-weather/static/js/main.495834e6.js",
+    "main.css": "/Applovin-weather/static/css/main.a4f506b3.css",
+    "main.js": "/Applovin-weather/static/js/main.66b75a6c.js",
     "index.html": "/Applovin-weather/index.html",
-    "main.d05aaac4.css.map": "/Applovin-weather/static/css/main.d05aaac4.css.map",
-    "main.495834e6.js.map": "/Applovin-weather/static/js/main.495834e6.js.map"
+    "main.a4f506b3.css.map": "/Applovin-weather/static/css/main.a4f506b3.css.map",
+    "main.66b75a6c.js.map": "/Applovin-weather/static/js/main.66b75a6c.js.map"
   },
   "entrypoints": [
-    "static/css/main.d05aaac4.css",
-    "static/js/main.495834e6.js"
+    "static/css/main.a4f506b3.css",
+    "static/js/main.66b75a6c.js"
   ]
 }
