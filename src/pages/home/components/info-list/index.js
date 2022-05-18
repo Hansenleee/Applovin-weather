@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { IMG_RAIN, IMG_HUMIDITY, IMG_WIND } from '../../../constants';
+import { IMG_RAIN, IMG_HUMIDITY, IMG_WIND } from '../../../../constants';
 
 export default function InfoList(props) {
   const { humidity, windpower = 0 } = props.weather || {};

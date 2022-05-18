@@ -3,8 +3,8 @@ import {
   Route,
   Routes
 } from "react-router-dom";
-import Home from './home';
-import Detail from './detail';
+import Home from './pages/home';
+import Detail from './pages/detail';
 
 export default function App() {
   return (

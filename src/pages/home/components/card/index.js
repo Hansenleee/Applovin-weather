@@ -1,6 +1,7 @@
 import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { WEATHER_TYPE_IMG } from '../../../constants';
+import WeatherLogo from '../../../../components/weather-logo';
+import Temperature from '../../../../components/temperature';
 import './style.scss';
 
 export default function Card(props) {
@@ -13,14 +14,13 @@ export default function Card(props) {
 
   return (
     <div className="dashbord-card">
-      <img className="dashbord-card__image" alt="" src={WEATHER_TYPE_IMG[weather][new Date().getHours() >= 18 ? 1 : 0]}/>
+      <div className="dashbord-card__image">
+        <WeatherLogo weather={weather} />
+      </div>
       <p className="dashbord-card__address">杭州市 浙江省</p>
       <div className="dashbord-card__info">
         <div className="left-info">
-          <div className="left-info__temp">
-            <span>{temperature}</span>
-            <span className="left-info__temp__mark">°C</span>
-          </div>
+          <Temperature temperature={temperature} size="medium"/>
           <div className="left-info__date">
             <span>周日,</span>
             <span>11 am</span>

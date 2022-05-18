@@ -1,0 +1,65 @@
+.components-temperature {
+  display: flex;
+
+  color: #000;
+
+  &--gray {
+    color: rgba(51, 40, 33, 0.5);
+  }
+
+  &--big {
+
+    & .temp {
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    & .mark {
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+
+  &--medium {
+
+    & .temp {
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    & .mark {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  &--small {
+
+    & .temp {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    & .mark {
+      font-size: 13px;
+      font-weight: 500;
+    }
+  }
+
+  &--tiny {
+
+    & .temp {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    & .mark {
+      font-size: 10px;
+      font-weight: 500;
+    }
+  }
+}
