@@ -1,4 +1,4 @@
-import axios from 'axios';
+import { get } from '../utils/http';
 
 const KEY = '1bc7cd5d9f62b610161eeb206b5f4d47';
 const SERVICE_CACHE = {};
@@ -13,8 +13,7 @@ export const getDayWeather = () => {
     return SERVICE_CACHE.promise;
   }
 
-  SERVICE_CACHE.promise = axios
-    .get(`https://restapi.amap.com/v3/weather/weatherInfo?city=330100&key=${KEY}`)
+  SERVICE_CACHE.promise = get(`https://restapi.amap.com/v3/weather/weatherInfo?city=330100&key=${KEY}`)
     .then((res) => {
       const { status, data } = res;
 
@@ -49,8 +48,7 @@ export const getFuture24Temp = () => {
 
 // 获取未来 7 天天气
 export const getFutureDayWeather = () => {
-  return axios
-  .get(`https://restapi.amap.com/v3/weather/weatherInfo?city=330100&key=${KEY}&extensions=all`)
+  return get(`https://restapi.amap.com/v3/weather/weatherInfo?city=330100&key=${KEY}&extensions=all`)
   .then((res) => {
     const { status, data } = res;
 
